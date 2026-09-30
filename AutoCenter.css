@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Anton";
+    src: url('Fontes/Anton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "News";
+    src: url("Fontes/Newsreader-VariableFont_opszwght.ttf");
+}
+
+header h1 {
+    padding-bottom: 20px;
+    font-family: 'Anton';   
+    font-size: 4.7rem;
+    position: relative;
+    bottom: 35px;
+    line-height: 1.6;
+}
+
+body p{
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-family: "News";
+    font-size: larger;
+} 
+
+h2 {
+    -webkit-text-stroke: 0.0001cm white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Anton"; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-image: url("Imagens/1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#Rally h2 {
+    color: red !important;
+    -webkit-text-stroke: #e50914 !important;
+    font-size: 2rem;
+}
+
+#Rally {
+    background: rgba(25, 25, 25, 0.85);
+    border-radius: 12px;
+    padding: 30px;  
+    margin-bottom: 30px;
+
+    border-left: 4px, solid #e50914;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+}
+
+#Rally:hover{
+    transform: translateY(-8px);    
+    box-shadow: 0 12px 24px rgba(229, 9, 20, 0.2); 
+    background-image: url("Imagens/Rally1.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
+#Rally:hover h2{
+    color: white !important;
+
+    transition: transform 0.5 ease, color 0.3 ease-in-out;
+}
